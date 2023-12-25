@@ -1,0 +1,98 @@
+body{
+  margin: 0px;
+}
+
+.machine{
+  display: grid;
+  grid-template-areas:
+  ". . . ." 
+  ". slot slot score"
+  ". slot slot ."
+  ". slot slot ."
+  ". button button ."
+  ". . . .";
+
+  width: 100vw;
+  height: 100vh;
+
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%,#000 90%,#000 100%),
+                    url("./assets/pachincco.jpg");
+  background-repeat: no-repeat;
+  background-size : cover;
+}
+
+/* 점수 */
+.score-wrapper{
+  grid-area: score;
+
+  display: flex;
+  flex-flow: column;
+  border-radius: 20px;
+  padding: 50px;
+  background-color: darkslategray;
+}
+.score-tag{
+  font-size: 100px;
+  color: gold;
+}
+.current-score{
+  text-align: right;
+  font-size: 100px;
+  color: gold;
+}
+
+/* 슬롯머신 */
+.slot-machine{
+  grid-area: slot;
+
+  width: 1000px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.swiper{
+  width: 200px;
+  height: 50vh;
+  margin: 0;
+}
+
+.swiper-slide{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+}
+.swiper-slide-next{
+  background-color: green;
+}
+
+.swiper-slide img{
+  display: block;
+}
+
+/* 버튼 */
+.button-wrapper{
+  grid-area: button;
+
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  border: 0;
+  background-color:transparent;
+}
+
+.button > span{
+  display: inline;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+}
+
