@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "live-server client --host=localhost --port=5505 --no-browser"
+    "dev": "live-server --host=localhost --port=5505 --no-browser"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
